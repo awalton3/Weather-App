@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherApp">
+    
+    <head>
+        <title>Global Weather Center</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        <!-- Linking fontawesome -->
+	   <script src="https://use.fontawesome.com/680a65bdf2.js"></script>
+	
+	   <!--Linking JQuery -->
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        
+        <!-- Loading angularjs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-resource.min.js"></script>
+        
+        <!-- Linking main app.js -->
+        <script src="app.js"></script>
+        
+    </head>
+    
+    <body style="background-color: antiquewhite;">
+        
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+        
+        <header>
+			<nav class="navbar navbar-default" style="background-color: saddlebrown;">
+			<div class="container" style="padding: 25px 0px">
+				<div class="navbar-header">
+                    <a class="navbar-brand" href="#" style="font-size: 1.8em; color: antiquewhite;"><i class="fa fa-tint"></i><i class="fa fa-bolt"></i> Global Weather Center</a>
+				</div>
+                
+                 <ul class="nav navbar-nav navbar-right">
+					<li><a href="#/contact" style="font-size: 1.2em; color: white;"><i class="fa fa-share"></i> Share</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/" style="font-size: 1.2em; color: white;"><i class="fa fa-home"></i> Home</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+        
+        <div class="container">
+        
+            <div ng-view></div>
+            
+		</div>
+    </body>
+</html>

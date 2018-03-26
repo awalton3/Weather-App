@@ -1,0 +1,21 @@
+<div class="row" style="padding: 200px 0px;">
+
+    <div class="col-md-6 col-md-offset-3">
+    
+        <h1 style="color: saddlebrown;">Search a city's forecast.</h1>
+        
+        <div class="form-group">
+            <input type ="text" ng-model="cityinput" class="form-control" />
+        </div>
+        
+        <div class="alert alert-info" ng-show="cityinput.length <= characters">
+        
+            *Inputed field must be longer than 10 characters. 
+            
+        </div>
+        
+        <a href="#/forecast" class="btn btn-primary" role="button" style="font-size: 1.3em">Load Forecast for {{ cityinput }}</a>
+        
+    </div>
+
+</div>
